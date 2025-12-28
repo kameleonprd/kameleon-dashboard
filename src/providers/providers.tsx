@@ -1,16 +1,18 @@
 "use client";
 
 import { QueryProvider } from "./QueryProvider";
+import { AuthProvider } from "./AuthProvider";
 
 /**
  * Root Providers
  *
  * Wraps the application with global context providers.
- *
- * Note: AuthProvider is applied at the (dashboard) layout level
- * to allow public routes (login, register, etc.) to render
- * without authentication checks.
+ * AuthProvider is at root level so all pages (including auth pages) can use useAuth().
  */
 export function Providers({ children }: { children: React.ReactNode }) {
-  return <QueryProvider>{children}</QueryProvider>;
+  return (
+    <QueryProvider>
+      <AuthProvider>{children}</AuthProvider>
+    </QueryProvider>
+  );
 }

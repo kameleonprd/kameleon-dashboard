@@ -58,28 +58,19 @@ export function Footer() {
             <h3 className="text-sm font-semibold text-gray-900 mb-4">Company</h3>
             <ul className="space-y-3">
               <li>
-                <Link
-                  href="/about"
-                  className="text-sm text-gray-600 hover:text-violet-600 transition-colors"
-                >
-                  About
-                </Link>
+                <span className="text-sm text-gray-400 cursor-not-allowed">
+                  About (Coming Soon)
+                </span>
               </li>
               <li>
-                <Link
-                  href="/privacy"
-                  className="text-sm text-gray-600 hover:text-violet-600 transition-colors"
-                >
-                  Privacy
-                </Link>
+                <span className="text-sm text-gray-400 cursor-not-allowed">
+                  Privacy (Coming Soon)
+                </span>
               </li>
               <li>
-                <Link
-                  href="/terms"
-                  className="text-sm text-gray-600 hover:text-violet-600 transition-colors"
-                >
-                  Terms
-                </Link>
+                <span className="text-sm text-gray-400 cursor-not-allowed">
+                  Terms (Coming Soon)
+                </span>
               </li>
             </ul>
           </div>

@@ -1,19 +1,22 @@
 "use client";
 
-import { useAuth, AuthProvider } from "@/providers/AuthProvider";
+import { useAuth } from "@/providers/AuthProvider";
 import { DashboardShell } from "@/components/dashboard/DashboardShell";
 
 /**
- * Dashboard Layout Client Component
+ * Dashboard Layout
  *
  * Wraps all dashboard pages with:
- * - AuthProvider for authentication
  * - DashboardShell for layout (sidebar, header)
  *
- * Redirects to /login if not authenticated (handled by AuthProvider)
+ * AuthProvider is at root level (providers.tsx).
+ * Redirects to /login if not authenticated (handled by AuthProvider).
  */
-
-function DashboardLayoutContent({ children }: { children: React.ReactNode }) {
+export default function DashboardLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   const { isInitializing, isAuthenticated, isLoading } = useAuth();
 
   // Show loading state while checking auth
@@ -42,16 +45,4 @@ function DashboardLayoutContent({ children }: { children: React.ReactNode }) {
   }
 
   return <DashboardShell>{children}</DashboardShell>;
-}
-
-export default function DashboardLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return (
-    <AuthProvider>
-      <DashboardLayoutContent>{children}</DashboardLayoutContent>
-    </AuthProvider>
-  );
 }
