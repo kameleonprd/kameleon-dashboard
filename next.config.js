@@ -4,6 +4,9 @@ const withNextIntl = createNextIntlPlugin('./src/i18n.ts');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Required for AWS Amplify SSR deployment
+  output: 'standalone',
+
   // Security headers
   async headers() {
     return [
