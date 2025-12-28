@@ -1,0 +1,232 @@
+{
+  "dashboard": {
+    "title": "Panel",
+    "welcome": "Bienvenido de nuevo",
+    "overview": {
+      "title": "Resumen",
+      "recentDocuments": "Documentos Recientes",
+      "quickActions": "Acciones Rapidas",
+      "createDocument": "Crear Nuevo Documento"
+    },
+    "sidebar": {
+      "documents": "Documentos",
+      "personas": "Personas",
+      "templates": "Plantillas",
+      "axioms": "Axiomas",
+      "settings": "Configuracion"
+    },
+    "documents": {
+      "title": "Documentos",
+      "subtitle": "Gestione sus documentos PRD",
+      "create": "Nuevo Documento",
+      "search": "Buscar documentos...",
+      "filters": {
+        "all": "Todos los Documentos",
+        "draft": "Borradores",
+        "review": "En Revision",
+        "approved": "Aprobados"
+      },
+      "columns": {
+        "name": "Nombre",
+        "template": "Plantilla",
+        "persona": "Persona Objetivo",
+        "status": "Estado",
+        "lastModified": "Ultima Modificacion"
+      },
+      "status": {
+        "draft": "Borrador",
+        "review": "En Revision",
+        "approved": "Aprobado",
+        "archived": "Archivado"
+      },
+      "actions": {
+        "edit": "Editar Documento",
+        "duplicate": "Duplicar",
+        "archive": "Archivar",
+        "delete": "Eliminar"
+      },
+      "empty": {
+        "title": "Sin Documentos Aun",
+        "description": "Cree su primer PRD para comenzar."
+      }
+    },
+    "personas": {
+      "title": "Personas",
+      "subtitle": "Perfiles de calibracion de revisores",
+      "create": "Nueva Persona",
+      "search": "Buscar personas...",
+      "columns": {
+        "name": "Nombre",
+        "role": "Rol",
+        "examples": "Ejemplos de Entrenamiento",
+        "lastCalibrated": "Ultima Calibracion"
+      },
+      "form": {
+        "name": "Nombre de Persona",
+        "namePlaceholder": "ej., Christian (SVP)",
+        "role": "Rol / Titulo",
+        "rolePlaceholder": "ej., Vicepresidente Senior",
+        "description": "Descripcion",
+        "descriptionPlaceholder": "Breve descripcion de este revisor...",
+        "examples": "Ejemplos de Entrenamiento",
+        "addExample": "Agregar Ejemplo",
+        "exampleTypes": {
+          "liked": "Cosas que le gustaron",
+          "disliked": "Cosas que no le gustaron",
+          "revision": "Revision antes/despues"
+        }
+      },
+      "empty": {
+        "title": "Sin Personas Aun",
+        "description": "Cree perfiles de revisores para calibrar sus documentos."
+      },
+      "calibration": {
+        "title": "Calibrar Persona",
+        "description": "Agregue ejemplos para mejorar la precision del perfil.",
+        "extractProfile": "Extraer Perfil",
+        "profilePreview": "Vista Previa del Perfil"
+      }
+    },
+    "templates": {
+      "title": "Plantillas",
+      "subtitle": "Estructuras de documentos para diferentes audiencias",
+      "create": "Nueva Plantilla",
+      "search": "Buscar plantillas...",
+      "columns": {
+        "name": "Nombre",
+        "audience": "Audiencia Objetivo",
+        "sections": "Secciones",
+        "usage": "Veces Usada"
+      },
+      "audiences": {
+        "engineering": "Ingenieria",
+        "product": "Gestion de Producto",
+        "leadership": "Liderazgo",
+        "custom": "Personalizada"
+      },
+      "form": {
+        "name": "Nombre de Plantilla",
+        "namePlaceholder": "ej., Especificacion de Ingenieria",
+        "audience": "Audiencia Objetivo",
+        "description": "Descripcion",
+        "descriptionPlaceholder": "Para que es esta plantilla?",
+        "sections": "Secciones",
+        "addSection": "Agregar Seccion",
+        "sectionName": "Nombre de Seccion",
+        "sectionGuidance": "Guia"
+      },
+      "empty": {
+        "title": "Sin Plantillas Personalizadas Aun",
+        "description": "Cree plantillas personalizadas o use las predeterminadas."
+      },
+      "defaults": {
+        "title": "Plantillas Predeterminadas",
+        "engineering": "Especificacion de Ingenieria",
+        "product": "Requisitos de Producto",
+        "leadership": "Resumen Ejecutivo"
+      }
+    },
+    "axioms": {
+      "title": "Axiomas",
+      "subtitle": "Principios rectores para contenido PRD",
+      "create": "Nuevo Axioma",
+      "search": "Buscar axiomas...",
+      "columns": {
+        "principle": "Principio",
+        "description": "Descripcion",
+        "enabled": "Habilitado"
+      },
+      "form": {
+        "principle": "Principio",
+        "principlePlaceholder": "ej., Ser factual",
+        "description": "Descripcion",
+        "descriptionPlaceholder": "Explique el principio..."
+      },
+      "empty": {
+        "title": "Sin Axiomas Personalizados Aun",
+        "description": "Cree axiomas personalizados o use los predeterminados."
+      },
+      "defaults": {
+        "title": "Axiomas Predeterminados",
+        "factual": {
+          "principle": "Ser factual",
+          "description": "Sin especulacion, sin relleno, sin palabras de cobertura sin justificacion"
+        },
+        "concise": {
+          "principle": "Cada oracion cuenta",
+          "description": "Si puede eliminarse sin perder significado, eliminelo"
+        },
+        "audience": {
+          "principle": "Servir a la audiencia",
+          "description": "Enmarque la informacion en terminos que importen al lector"
+        },
+        "actionable": {
+          "principle": "Ser accionable",
+          "description": "Los lectores deben saber que hacer o decidir despues de leer"
+        }
+      }
+    },
+    "settings": {
+      "title": "Configuracion",
+      "subtitle": "Gestione su cuenta y preferencias",
+      "sections": {
+        "profile": "Perfil",
+        "preferences": "Preferencias",
+        "team": "Equipo",
+        "billing": "Facturacion",
+        "api": "Claves API"
+      },
+      "profile": {
+        "title": "Configuracion de Perfil",
+        "firstName": "Nombre",
+        "lastName": "Apellido",
+        "email": "Correo Electronico",
+        "organization": "Organizacion",
+        "avatar": "Foto de Perfil",
+        "changeAvatar": "Cambiar Foto"
+      },
+      "preferences": {
+        "title": "Preferencias",
+        "language": "Idioma",
+        "theme": "Tema",
+        "themes": {
+          "light": "Claro",
+          "dark": "Oscuro",
+          "system": "Sistema"
+        },
+        "notifications": "Notificaciones",
+        "emailNotifications": "Notificaciones por Correo",
+        "defaultTemplate": "Plantilla Predeterminada",
+        "defaultAxioms": "Axiomas Predeterminados"
+      },
+      "team": {
+        "title": "Gestion de Equipo",
+        "members": "Miembros del Equipo",
+        "invite": "Invitar Miembro",
+        "role": "Rol",
+        "roles": {
+          "owner": "Propietario",
+          "admin": "Administrador",
+          "member": "Miembro"
+        }
+      },
+      "danger": {
+        "title": "Zona de Peligro",
+        "deleteAccount": "Eliminar Cuenta",
+        "deleteAccountWarning": "Esta accion no se puede deshacer. Todos sus datos seran eliminados permanentemente."
+      }
+    },
+    "editor": {
+      "title": "Editor de Documentos",
+      "untitled": "Documento Sin Titulo",
+      "selectTemplate": "Seleccionar Plantilla",
+      "selectPersona": "Seleccionar Persona Objetivo",
+      "transform": "Transformar Documento",
+      "preview": "Vista Previa",
+      "modelReview": "Revision del Modelo",
+      "reviewFeedback": "Retroalimentacion de Revision",
+      "save": "Guardar Borrador",
+      "submit": "Enviar para Revision"
+    }
+  }
+}
